@@ -1,0 +1,5 @@
+{
+	"name": "mootools/pack",
+	"type": "typo3-flow-package",
+	"description": "MooTools Stack, MooTools Slide, MooTools Popup"
+}

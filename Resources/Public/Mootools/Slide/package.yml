@@ -1,0 +1,32 @@
+name: "Slide"
+exports: "mootools-slide.js"
+web: "[mooforum.net](http://mooforum.net)"
+description: "MooTools Slide Behavior"
+license: "[MIT License](http://mootools.net/license.txt)"
+copyright: "&copy; [mooforum](http://mooforum.net)"
+authors: "[Thomas Allmer](http://mooforum.net)"
+
+author: daKmoR
+category: Interface
+tags: [animation, gallery, slide]
+#docs: http://url.to.docs
+#demo: http://url.to.demo
+#current: 0.5
+
+sources:
+  - Source/Gallery.js
+  - Source/Gallery.Element.js
+  - Source/Gallery.Image.js
+  - Source/Gallery.Div.js
+  - Source/Gallery.Link.js
+  - Source/Gallery.Link.Request.js
+  - Source/Gallery.Pagination.js
+  - Source/Slide.js
+  - Source/Line.js
+  - Source/Marquee.js
+  - Source/Behaviors/Behavior.Slide.js
+  - Source/Behaviors/Behavior.Line.js
+  - Source/Behaviors/Behavior.Gallery.Element.js
+  - Source/Behaviors/Behavior.Gallery.Pagination.js
+  - Source/Delegators/Delegator.Gallery.Controls.js
+  - Source/Delegators/Delegator.Gallery.Show.js

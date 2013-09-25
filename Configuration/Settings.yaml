@@ -1,0 +1,8 @@
+MooTools:
+  Packager:
+    PageBuild:
+      jsFileName: 'MooTools.Pack_{shortHash}.js'
+      paths:
+        Stack: resource://MooTools.Pack/Public/Mootools/Stack
+        Slide: resource://MooTools.Pack/Public/Mootools/Slide
+        Popup: resource://MooTools.Pack/Public/Mootools/Popup

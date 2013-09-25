@@ -1,0 +1,53 @@
+{
+	"config": {
+		"vendor-dir": "Resources/Public"
+	},
+	"repositories": [
+		{
+			"type": "package",
+			"package": {
+				"name": "Mootools/Stack",
+				"version": "master",
+				"source": {
+					"url": "https://github.com/daKmoR/mootools-stack.git",
+					"type": "git",
+					"reference": "master"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "Mootools/Slide",
+				"version": "master",
+				"source": {
+					"url": "https://github.com/daKmoR/mootools-slide.git",
+					"type": "git",
+					"reference": "master"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "Mootools/Popup",
+				"version": "master",
+				"source": {
+					"url": "https://github.com/daKmoR/mootools-popup.git",
+					"type": "git",
+					"reference": "master"
+				}
+			}
+		}
+	],
+	"name": "mootools/pack",
+	"type": "typo3-flow-package",
+	"description": "MooTools Stack, MooTools Slide, MooTools Popup",
+	"version": "1.0.0",
+	"require": {
+		"Mootools/Stack": "*",
+		"Mootools/Slide": "*",
+		"Mootools/Popup": "*"
+	},
+  "minimum-stability": "dev"
+}
