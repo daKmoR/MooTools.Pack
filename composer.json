@@ -1,5 +1,13 @@
 {
 	"name": "mootools/pack",
 	"type": "typo3-flow-package",
-	"description": "MooTools Stack, MooTools Slide, MooTools Popup"
+	"description": "MooTools Stack, MooTools Slide, MooTools Popup",
+	"require": {
+		"mootools/packager": "dev-master"
+	},
+	"autoload": {
+		"psr-0": {
+			"MooTools\\Pack": "Classes"
+		}
+	}
 }
