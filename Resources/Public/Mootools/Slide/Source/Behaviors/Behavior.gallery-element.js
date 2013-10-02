@@ -2,23 +2,24 @@
 ---
 name: Behavior.Gallery.Element
 description: ...
-provides: [Behavior.Gallery.Element]
-requires: [Behavior/Behavior, More/Object.Extras, Gallery.Image, Gallery.Div, Gallery.Link.Request, Behavior.Slide]
+provides: [Behavior.gallery-element]
+requires: [Behavior/Behavior, More/Object.Extras, Gallery.Image, Gallery.Div, Gallery.Link.Request, Behavior.slide]
 script: Behavior.Gallery.Element.js
 
 Example:
-<div data-behavior="Slide" data-slide-duration="4000" class="...">
-	<img data-behavior="Gallery.Element" src="..." alt="..." />
-	<img data-behavior="Gallery.Element" src="..." alt="..." />
+<div data-behavior="slide" data-slide-duration="4000" class="...">
+	<img data-behavior="gallery-element" src="..." alt="..." />
+	<img data-behavior="gallery-element" src="..." alt="..." />
 </div>
+<div data-behavior="gallery-pagination" class="..."></div>
 
 ...
 */
 
-Behavior.addGlobalFilter('Gallery.Element', {
+Behavior.addGlobalFilter('gallery-element', {
 
 	defaults: {
-		target: '![data-behavior="Slide"], ![data-behavior="Line"]',
+		target: '![data-behavior="slide"], ![data-behavior="line"]',
 		type: 'auto',
 		isstartelement: null,
 		width: null,
@@ -30,7 +31,7 @@ Behavior.addGlobalFilter('Gallery.Element', {
 
 	setup: function(element, api) {
 		var target = element.getElement(api.getAs(String, 'target'));
-		var slide = target.getBehaviorResult('Slide') || target.getBehaviorResult('Line');
+		var slide = target.getBehaviorResult('slide') || target.getBehaviorResult('line');
 		var options = Object.cleanValues({
 			isStartElement: api.getAs(Boolean, 'isstartelement'),
 			size: Object.cleanValues(

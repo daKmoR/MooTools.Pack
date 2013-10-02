@@ -35,7 +35,7 @@ sources:
   - "Source/Delegators/Delegator.tween.js"
   - "Source/Delegators/Delegator.class.js"
   - "Source/Delegators/Delegator.Style.js"
-  - "Source/Delegators/Delegator.Print.js"
+  - "Source/Delegators/Delegator.print.js"
   - "Source/Delegators/Delegator.Zoom.js"
   - "Source/Delegators/Delegator.SyncSelect.js"
   - "Source/Delegators/Delegator.SubmitChangedSelect.js"

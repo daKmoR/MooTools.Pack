@@ -2,24 +2,28 @@
 ---
 name: Behavior.Slide
 description: Adds a slide interface
-provides: [Behavior.Slide]
+provides: [Behavior.slide]
 requires: [Behavior/Behavior, Slide, Delegator.SlideControls]
 script: Behavior.Slide.js
 
 Example Simple:
-<div data-behavior="Slide" data-slide-duration="4000" class="...">
-	<img data-behavior="Gallery.Element" src="..." alt="..." />
-	<img data-behavior="Gallery.Element" src="..." alt="..." />
+<div class="gallery">
+	<div data-behavior="slide" data-slide-duration="4000" class="...">
+		<img data-behavior="gallery-element" src="..." alt="..." />
+		<img data-behavior="gallery-element" src="..." alt="..." />
+	</div>
+	<div data-behavior="gallery-pagination"></div>
+	<button data-trigger="gallery-next"><span>next</span></button>
+	<button data-trigger="gallery-previous"><span>previous</span></button>
 </div>
-<div data-behavior="Gallery.Pagination" class="..."></div>
 
 ...
 */
 
-Behavior.addGlobalFilter('Slide', {
+Behavior.addGlobalFilter('slide', {
 
 	defaults: {
-		'containerposition': false
+		'containerposition': false,
 	},
 
 	setup: function(element, api) {

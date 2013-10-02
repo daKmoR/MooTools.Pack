@@ -23,12 +23,13 @@ Gallery.Image = new Class({
 
 	initialize: function (image, slide, options) {
 		this.setOptions(options);
-		this.guessSize(image);
+		//this.guessSize(image);
 
 		this.parent(image, slide, options);
 	},
 
 	guessSize: function(image) {
+		console.log(image);
 		if (this.options.size.width === 'auto') {
 			this.options.size.width = image.get('width').toInt();
 		}
@@ -39,12 +40,12 @@ Gallery.Image = new Class({
 
 	display: function() {
 		this.parent();
-		this.adjustSizeTo(this.slide.getSize());
+		//this.adjustSizeTo(this.slide.getSize());
 	},
 
 	show: function() {
 		this.parent();
-		this.adjustSizeTo(this.slide.getSize());
+		//this.adjustSizeTo(this.slide.getSize());
 	},
 
 	getSize: function() {

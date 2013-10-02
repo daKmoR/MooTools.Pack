@@ -1,16 +1,16 @@
 /*
 ---
 description: print the document
-provides: [Delegator.Print]
+provides: [Delegator.print]
 requires: [Behavior/Delegator, Core/Element]
-script: Delegator.Print.js
-name: Delegator.Print
+script: Delegator.print.js
+name: Delegator.print
 ...
 */
 
 (function(){
 
-	Delegator.register('click', 'Print', {
+	Delegator.register('click', 'print', {
 		handler: function(event, link, api) {
 			event.stop();
 			window.print();

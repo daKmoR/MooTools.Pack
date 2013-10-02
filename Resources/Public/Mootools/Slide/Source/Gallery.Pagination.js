@@ -17,11 +17,11 @@ Gallery.Pagination = new Class({
 	Implements: [Options, Chain, Events],
 
 	options: {
-		template: '<a data-trigger="Gallery.Show" data-gallery-show-element="' +
-							'!div > [data-behavior=\'Slide\'] [data-behavior=\'Gallery.Element\']:nth-child({cycle}),' +
-							'!div > * > [data-behavior=\'Slide\'] [data-behavior=\'Gallery.Element\']:nth-child({cycle}),' +
-							'!body [data-behavior=\'Slide\'] [data-behavior=\'Gallery.Element\']:nth-child({cycle})' +
-							'"><span>{cycle}</span></a>',
+		template: '<button data-trigger="gallery-show" data-gallery-show-element="' +
+							'!div > [data-behavior=\'slide\'] [data-behavior=\'gallery-element\']:nth-child({cycle}),' +
+							'!div > * > [data-behavior=\'slide\'] [data-behavior=\'gallery-element\']:nth-child({cycle}),' +
+							'!body [data-behavior=\'slide\'] [data-behavior=\'gallery-element\']:nth-child({cycle})' +
+							'"><span>{cycle}</span></button>',
 		activeClass: 'active',
 		forceShow: false
 	},

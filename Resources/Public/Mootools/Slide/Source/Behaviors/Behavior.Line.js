@@ -1,15 +1,26 @@
 /*
 ---
-name: Behavior.Line
+name: Behavior.line
 description: Adds a slideLine interface
-provides: [Behavior.Line]
-requires: [Behavior/Behavior, Line, Marquee]
+provides: [Behavior.line]
+requires: [Behavior/Behavior, Line]
 script: Behavior.Line.js
+
+Example Simple:
+<div class="gallery">
+	<div data-behavior="line" data-slide-duration="4000" class="...">
+		<img data-behavior="gallery-element" src="..." alt="..." />
+		<img data-behavior="gallery-element" src="..." alt="..." />
+	</div>
+	<div data-behavior="gallery-pagination"></div>
+	<button data-trigger="gallery-next"><span>next</span></button>
+	<button data-trigger="gallery-previous"><span>previous</span></button>
+</div>
 
 ...
 */
 
-Behavior.addGlobalFilter('Line', {
+Behavior.addGlobalFilter('line', {
 
 	defaults: {
 		'containerposition': false,
@@ -29,8 +40,7 @@ Behavior.addGlobalFilter('Line', {
 		options.duration = api.getAs(Number, 'duration');
 		options.elementSize = { width: api.getAs(Number, 'element-width') };
 
-		return new Marquee(element, options);
-		//return new Line(element, options);
+		return new Line(element, options);
 	}
 
 });

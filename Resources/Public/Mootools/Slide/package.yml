@@ -24,9 +24,9 @@ sources:
   - Source/Slide.js
   - Source/Line.js
   - Source/Marquee.js
-  - Source/Behaviors/Behavior.Slide.js
-  - Source/Behaviors/Behavior.Line.js
-  - Source/Behaviors/Behavior.Gallery.Element.js
-  - Source/Behaviors/Behavior.Gallery.Pagination.js
-  - Source/Delegators/Delegator.Gallery.Controls.js
-  - Source/Delegators/Delegator.Gallery.Show.js
+  - Source/Behaviors/Behavior.slide.js
+  - Source/Behaviors/Behavior.line.js
+  - Source/Behaviors/Behavior.gallery-element.js
+  - Source/Behaviors/Behavior.gallery-pagination.js
+  - Source/Delegators/Delegator.gallery-controls.js
+  - Source/Delegators/Delegator.gallery-show.js
