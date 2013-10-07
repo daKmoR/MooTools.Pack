@@ -3,7 +3,7 @@
 name: Behavior.Slide
 description: Adds a slide interface
 provides: [Behavior.slide]
-requires: [Behavior/Behavior, Slide, Delegator.SlideControls]
+requires: [Behavior/Behavior, More/Object.Extras, Slide, Delegator.SlideControls]
 script: Behavior.Slide.js
 
 Example Simple:
@@ -23,7 +23,7 @@ Example Simple:
 Behavior.addGlobalFilter('slide', {
 
 	defaults: {
-		'containerposition': false,
+		'containerposition': false
 	},
 
 	setup: function(element, api) {

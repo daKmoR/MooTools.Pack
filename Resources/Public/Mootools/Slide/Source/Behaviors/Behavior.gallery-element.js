@@ -1,6 +1,6 @@
 /*
 ---
-name: Behavior.Gallery.Element
+name: Behavior. Gallery-element
 description: ...
 provides: [Behavior.gallery-element]
 requires: [Behavior/Behavior, More/Object.Extras, Gallery.Image, Gallery.Div, Gallery.Link.Request, Behavior.slide]
