@@ -31,6 +31,7 @@ sources:
   - "Source/Behaviors/Behavior.Nudging.js"
   - "Source/Behaviors/Behavior.Zoom.js"
   - "Source/Behaviors/Behavior.smooth-scroll.js"
+  - "Source/Behaviors/Behavior.scroll.js"
   - "Source/Behaviors/Behavior.OnlyOnce.js"
   - "Source/Delegators/Delegator.tween.js"
   - "Source/Delegators/Delegator.class.js"

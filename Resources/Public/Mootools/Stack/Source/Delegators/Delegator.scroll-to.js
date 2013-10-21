@@ -2,7 +2,7 @@
 ---
 description: scroll-to the document
 provides: [Delegator.scroll-to]
-requires: [Behavior/Delegator, Core/Element, Behavior.smooth-scroll]
+requires: [Behavior/Delegator, Core/Element, Behavior.scroll]
 script: Delegator.scroll-to.js
 name: Delegator.scroll-to
 ...
@@ -15,11 +15,15 @@ name: Delegator.scroll-to
 		require: ['target'],
 
 		defaults: {
-			'smooth-scroll': '!body [data-behavior~="smooth-scroll"]'
+			'scroll': '!body [data-behavior~="scroll"], !body [data-behavior~="smooth-scroll"]'
 		},
 
 		handler: function(event, link, api) {
-			link.getElement(api.getAs(String, 'smooth-scroll')).getBehaviorResult('smooth-scroll').toElement(
+			event.stop();
+			var scroll = link.getElement(api.getAs(String, 'scroll'));
+			var scroller = scroll.getBehaviorResult('scroll') || scroll.getBehaviorResult('smooth-scroll');
+
+			scroller.toElement(
 				link.getElement(api.getAs(String, 'target'))
 			);
 		}
